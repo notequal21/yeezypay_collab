@@ -1,0 +1,22 @@
+.header {
+  backdrop-filter: blur(22.5px);
+
+  &Body {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    &__logo {
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 auto;
+
+      &Lang {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
