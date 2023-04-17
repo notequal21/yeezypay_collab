@@ -91,9 +91,13 @@ h6 {
 @import url(./style/index.scss);
 
 body {
-  font-family: 'Jost';
+  font-family: 'Jost', sans-serif;
   font-weight: 400;
   background: #0e141e;
+}
+
+#root {
+  height: 100%;
 }
 
 .container {

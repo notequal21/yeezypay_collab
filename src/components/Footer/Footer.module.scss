@@ -1,0 +1,57 @@
+.footer {
+  margin: 100px 0 0;
+  background: #141c29;
+  backdrop-filter: blur(22.5px);
+
+  @media (max-width: 1440px) {
+    margin: 75px 0 0;
+  }
+
+  @media (max-width: 991px) {
+    margin: 50px 0 0;
+  }
+
+  &Body {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 0;
+      height: auto;
+    }
+
+    &__cr {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 23px;
+      color: #b2bad8;
+
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 23px;
+      text-decoration-line: underline;
+      color: #b2bad8;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        text-decoration-line: underline;
+        color: #26c7bc;
+      }
+
+      @media (max-width: 767px) {
+        margin: 10px 0 0;
+      }
+    }
+  }
+}

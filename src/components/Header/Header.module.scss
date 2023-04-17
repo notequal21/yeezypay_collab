@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 3;
   backdrop-filter: blur(22.5px);
 
   &Body {
@@ -6,13 +8,31 @@
     align-items: center;
     height: 100px;
 
+    @media (max-width: 767px) {
+      height: 80px;
+    }
+
     &__logo {
+      @media (max-width: 767px) {
+        height: 25px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
 
     &__btns {
       display: flex;
       align-items: center;
       margin: 0 0 0 auto;
+
+      &Connect {
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
 
       &Lang {
         margin: 0 0 0 10px;

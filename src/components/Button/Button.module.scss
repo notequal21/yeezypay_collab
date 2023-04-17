@@ -17,10 +17,16 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #26c7bc;
+    background: #26c7bc;
   }
 
   svg {
     margin: 0 10px 0 0;
+  }
+
+  &_fill {
+    background: linear-gradient(80.46deg, #ade6e0 -0.68%, #26c7bc 100%);
+    border: none;
+    transition: none;
   }
 }
