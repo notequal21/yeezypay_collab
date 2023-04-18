@@ -1,0 +1,15 @@
+.textarea {
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background: transparent;
+  padding: 21px 0;
+  border-bottom: 1px solid rgba(79, 91, 111, 0.25);
+  resize: none;
+  min-height: 130px;
+
+  &::placeholder {
+    color: #4f5b6f;
+  }
+}

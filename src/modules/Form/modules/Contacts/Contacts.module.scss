@@ -1,0 +1,122 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: #ffffff;
+
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+
+  &Body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0;
+    max-width: 480px;
+
+    @media (max-width: 1200px) {
+      margin: 20px 0 0;
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+
+    @media (max-width: 991px) {
+      max-width: 575px;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      flex: 0 0 calc(50% - 25px);
+      display: flex;
+      flex-wrap: wrap;
+
+      &:not(:first-child) {
+        margin: 50px 0 0 50px;
+      }
+
+      &:nth-child(2n + 1) {
+        margin: 50px 0 0;
+      }
+
+      &:nth-child(1) {
+        margin: 0;
+      }
+
+      &:nth-child(2) {
+        margin: 0 0 0 50px;
+      }
+
+      @media (max-width: 1200px) {
+        &:nth-child(1) {
+          flex: 0 0 214px;
+        }
+        &:nth-child(2) {
+          flex: 0 0 214px;
+        }
+        &:nth-child(3) {
+          flex: 0 1 120px;
+        }
+
+        &:not(:first-child) {
+          margin: 0 0 0 15px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        flex: 1 1 100% !important;
+        justify-content: center;
+
+        &:not(:first-child) {
+          margin: 20px 0 0;
+        }
+      }
+
+      span {
+        white-space: nowrap;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffffff;
+      }
+
+      a {
+        flex: 1 1 100%;
+        display: flex;
+        align-items: center;
+        margin: 10px 0 0;
+
+        font-size: 16px;
+        line-height: 23px;
+        color: #b2bad8;
+        transition: all 0.3s ease;
+
+        @media (max-width: 991px) {
+          margin: 5px 0 0;
+        }
+
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
+
+        &:hover {
+          color: #26c7bc;
+        }
+
+        img {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
