@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import Button from '../Button/Button';
 import LangSelect from '../LangSelect/LangSelect';
@@ -19,12 +20,11 @@ const Header = () => {
           </div>
 
           <div className={style.headerBody__btns}>
-            <Button
-              href='https://t.me/yeezypay'
-              className={style.headerBody__btnsConnect}
-            >
-              {PlaneSvg} {t('connect btn header')}
-            </Button>
+            <Link to='form' offset={-50} smooth={true}>
+              <Button className={style.headerBody__btnsConnect}>
+                {PlaneSvg} {t('connect btn header')}
+              </Button>
+            </Link>
             <LangSelect className={style.headerBody__btnsLang} />
           </div>
         </div>

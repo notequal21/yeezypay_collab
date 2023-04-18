@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import Button from '../../components/Button/Button';
 import PlaneSvg from '../../components/Header/assets/img/planeSvg';
 import style from './Main.module.scss';
@@ -64,14 +65,16 @@ const Main = () => {
             <li>{t('main list 3')}</li>
             <li dangerouslySetInnerHTML={{ __html: t('main list 4') }}></li>
           </ul>
-          <Button
-            href='https://t.me/yeezypay'
-            fill
-            className={style.mainBody__btn}
-          >
-            {PlaneSvg}
-            {t('main btn')}
-          </Button>
+          <Link to='form' smooth={true} offset={-50}>
+            <Button
+              href='https://t.me/yeezypay'
+              fill
+              className={style.mainBody__btn}
+            >
+              {PlaneSvg}
+              {t('main btn')}
+            </Button>
+          </Link>
         </div>
       </div>
     </main>

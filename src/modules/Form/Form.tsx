@@ -7,7 +7,7 @@ const Form = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={style.form}>
+    <div id='form' className={style.form}>
       <div className='container'>
         <div className={style.form__title}>{t('form title')}</div>
         <div className={style.formBody}>
